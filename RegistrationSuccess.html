@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+
+<html>
+    
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="main.css" />
+    </head>
+    
+      
+    
+    
+    <!--<script>
+        function loginValidation()
+        { 
+            var pswd = document.forms["Login"]["password"].value;
+            if (pswd===null || pswd==="") 
+            {
+            alert("Enter password");
+            return false;
+            } 
+        }
+    </script>
+    -->
+    
+     <body>
+        <h1 align="center">JAIL EXPOSURE SYSTEM</h1>
+	
+	<h2 align="left">
+            <ul> <li> <a class="active" href="Home.html"> Home </a></li>
+                  <li><a href="Registration.jsp">Registration</a></li>
+                 <li> <a class="active" href="Login.html">Login</a></li>
+                 <li> <a class="active" href="Aboutus.html"> About us</a></li>
+                 <li> <a class="active" href="Contactus.html">Contact us</a></li>
+            </ul>
+        </h2>	
+<br/>
+
+     
+     <form name="Login" action="http://localhost:8081/JES/LoginServlet" onsubmit="return loginValidation()" method="post">
+		<fieldset>
+			<legend>LOGIN</legend>
+			<label>User Id</label>
+			<input type="email" name="email" id="email" required/>
+			<br />
+			<label>Password</label>
+                        <input type="password" name="password" required />
+			<br />
+			<input type="submit" value="Submit" />
+			<input type="button" value="Forgot Password" />
+                        <h4 color='blue'><center>Registration Sucessful</center></h4>
+                        <br />	
+		</fieldset>
+	</form>
+</body>
+</html>
